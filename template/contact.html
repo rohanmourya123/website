@@ -1,0 +1,93 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>contact_us</title>
+</head>
+
+
+<body >
+<br>
+<div class="container">
+    <div class="container-fluid">
+        <section>
+            <div>
+                <div class="card " style="width: 370px;" align="center"  >
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <div>
+                                        <div class="card-body">
+                                        <h2>CONTACT US</h2>
+
+
+                                        <form action="" method="post" data-form-title="CONTACT US">
+                                            {% csrf_token %}
+                                            {{ value3 }}<br>
+                                            <!--
+                                                          <input type="hidden" data-form-email="true">
+                                                          <div class="form-group">
+                                                            <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                                                          </div>
+                                                          <div>
+                                                          -->
+                                            <br>
+                                            <br>
+
+                                            <button type="submit" class="btn btn-lg btn-danger">CONTACT US</button>
+
+                                        </form>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+</div>
+</div>
+
+<br>
+</section>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+-->
+
+</body>
+{% endblock content %}
+</html>
+
