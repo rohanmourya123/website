@@ -38,23 +38,29 @@
               margin-bottom:4px;
 
               }
+              .top{
+              margin-left:2px;
+              margin-top: 2px;
 
-
+              }
     </style>
 <div style="padding:3px 3px;" >
     <div class="heading">
         <h1> PIZZA DELIGHT </h1>
         <h4> STAY HOME STAY SAFE AND EAT TASTY Pizza's  </h4>
-        <h5> CONTACT US FOR HOME DELIVERY AND PICK UP DELIVERY  </h5>
+        <h5> CONTACT US FOR HOME DELIVERY AND PICK UP DELIVERY</h5>
+        <h5> DELIVERY ONLY IN PIPARIYA(MP)  </h5>
+
         <div class="timing">
 
             <h4 style="color:white; " >Timing:-  12 PM - 8 PM  </h4>
-           <h5> Contact us :- <a class="call" style="color: dark "   href="tel:+91 9970508122">+91 9970508122</a></h5>
+            <h5> Contact us :- <a class="call" style="color: dark "   href="tel:+91 9425409052">+91 9425409052</a></h5>
         </div>
 
         <br>
     </div>
 </div>
+
 
 <section >
     <div class = "top">
@@ -63,7 +69,7 @@
         <div class="row"  style="margin: 5px;">
             {% for i in value %}
 
-            <div class="card " style="width: 294px;" align="center" >
+            <div class="card " style="width: 296px;" align="center" >
                 <!-- <a href="/prod/{{i.pk}}">-->
                 <img src="{{ i.img.url }}" class="card-img-top" alt="..." width="350px" height="200px">
                 <div class="card-body">
