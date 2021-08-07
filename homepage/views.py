@@ -46,8 +46,8 @@ def signup(request):
     if request.method == 'POST':
         user=signup_form(request.POST)
         if user.is_valid():
-            user.save()
-            return HttpResponse('Usersave')
+         user.save()
+    return HttpResponse('Usersave')
     return render(request,'signup.html',context=context)
 
 
