@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import Product
 from django.contrib.auth.decorators import login_required
@@ -33,7 +33,8 @@ def contact(request):
         value3=contact_form(request.POST)
         if value3.is_valid():
             value3.save()
-            return HttpResponse('Usersave')
+        return render(request, "contact.html", context=context)
+
     return render(request,'contact.html',context=context)
 
 
